@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" charset="utf-8"></script>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <h1>
+    See what’s happening in each state
+  </h1>
+
+
+  <form class="custom-select" style="width 400">
+
+<div class="x-axis">
+<p>X-axis Options</p>
+<select name="valueX">
+  <option value="cases_14_day_avg_bypop">14 Day Average Daily Cases per 100,0000 Inhabitants</option>
+  <option value="ct_per_case" selected>Number of Contact Tracers per each COVID-19 case</option>
+  <option value="staff_ct_bypop">Number of Contact Tracers per 100,000 Inhabitants</option>
+</select>
+</div>
+
+<div class="y-axis">
+<p>Y-axis Options</p>
+<select name="valueY">
+<option value="cases_14_day_avg_bypop" selected>14 Day Average Daily Cases per 100,0000 Inhabitants</option>
+<option value="cases_14_day_avg">14 Day Average Daily Cases</option>
+</select>
+</div>
+
+  </form>
+
+</head>
+
+<body>
+  <svg></svg>
+</body>
+
+
+<script src="data.js"></script>
+
+<script src="tracing.js"></script>
+
+</html>
