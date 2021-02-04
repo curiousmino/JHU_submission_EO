@@ -1,3 +1,3 @@
-# JHU_submission_EO
+Includes d3.js file, html, css, js files. 
 
-Only includes D3.js Data Visualization Assignment. 
+
